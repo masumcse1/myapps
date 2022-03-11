@@ -1,6 +1,6 @@
 # myapps
 
-
+https://javabydeveloper.com/deploy-spring-boot-application-in-docker-quick-guide/
 --------
 
 docker build -t image-name:tag  .
@@ -21,4 +21,23 @@ http://localhost:8080/helloworld/hello
 
 =============
 
-https://javabydeveloper.com/deploy-spring-boot-application-in-docker-quick-guide/
+
+  
+  ####################################################################################
+
+-----------------docker push-------------------------------------------------------
+
+docker login [your_docker_hub_username]
+docker login – username=<username>
+
+
+----------------------------------------------------------------------------------
+
+docker tag  <image_id>   username/<image-name>:tag
+docker tag 2d98eda8f208  masumcse/myaps-image:1.0
+ 
+docker push tagimagename
+docker push masumcse/myaps-image:1.0
+
+===================================================================================
+https://springframework.guru/docker-hub-for-spring-boot/
