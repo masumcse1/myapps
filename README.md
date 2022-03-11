@@ -1,7 +1,9 @@
 # myapps
 
+
+Complete docker spring boot app
+
 https://javabydeveloper.com/deploy-spring-boot-application-in-docker-quick-guide/
---------
 
 docker build -t image-name:tag  .
 docker build -t myaps-image:1.0 .
