@@ -33,7 +33,7 @@ jobs:
         run: |
            git config user.email "optinfra.masum@gmail.com"
            git config user.name "masumcse1"
-      - name: Perform release & publish artifacts
+      - name: Perform package build
         run: mvn clean package   
        
       - name: Build the Docker image
