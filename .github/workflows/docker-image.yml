@@ -37,7 +37,7 @@ jobs:
         run: mvn clean package   
        
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag 100.02 dhakatest:$(date +%s)
+        run: docker build . --file Dockerfile --tag dhakatest:$(date +%s)
       
       - name: show Docker image
         run: docker images
