@@ -39,3 +39,7 @@ docker push masumcse/myaps-image:1.0
 
 ===================================================================================
 https://springframework.guru/docker-hub-for-spring-boot/
+##################git actions########################################
+
+1. git hub release 
+2. docker build push 
