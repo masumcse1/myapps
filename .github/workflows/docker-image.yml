@@ -38,6 +38,9 @@ jobs:
        
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-   
+      
+      - name: show Docker image
+        run: docker images
+         
         env:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
