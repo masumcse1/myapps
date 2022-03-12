@@ -33,10 +33,10 @@ jobs:
            git config user.email "optinfra.masum@gmail.com"
            git config user.name "masumcse1"
       - name: Perform release & publish artifacts
-          run: mvn clean package   
+        run: mvn clean package   
        
       - name: Build the Docker image
-          run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
    
         env:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
